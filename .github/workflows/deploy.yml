@@ -12,9 +12,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Create ENV or JSON file
+      - name: Create ENV file
         run: |
-          echo '${{ secrets.FAMILY_DATA }}' > src/config.json
+          echo '${{ secrets.METREE_SECRET_DATA }}' > .env
 
       - name: Checkout
         uses: actions/checkout@v4
