@@ -12,9 +12,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Create ENV file
-        run: |
-          echo '${{ secrets.METREE_SECRET_DATA }}' > .env
+      - name: Create JSON file
+        shell: bash
+        run: echo "VITE_METREE_SECRET_DATA='${{ secrets.METREE_SECRET_DATA }}'" > .env
 
       - name: Checkout
         uses: actions/checkout@v4

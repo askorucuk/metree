@@ -1,6 +1,6 @@
 import type { FamilyTreeData } from '../types';
 
-const METREE_SECRET_DATA = process.env.METREE_SECRET_DATA;
+const METREE_SECRET_DATA = import.meta.env.VITE_METREE_SECRET_DATA;
 
 if (!METREE_SECRET_DATA) {
   throw new Error('METREE_SECRET_DATA environment variable is not set');
