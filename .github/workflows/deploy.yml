@@ -12,10 +12,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Create JSON file from Base64
-        run: |
-          echo "${{ secrets.METREE_SECRET_DATA }}" | base64 -d > src/data.json
-
       - name: Checkout
         uses: actions/checkout@v4
 
