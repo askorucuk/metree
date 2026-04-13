@@ -23,9 +23,9 @@ function PersonNode({ data }: NodeProps & { data: PersonNodeData }) {
           style={{ padding: '20px' }}
         >
           <div className="flex flex-col items-center justify-center gap-2 py-4">
-            <span className="text-4xl text-[#64b5f6]">?</span>
+            <span className="text-4xl text-[#64b5f6]">{person.firstName}</span>
             <p className="text-sm font-medium text-[#42a5f5]">
-              {person.role || 'Gelecek nesil'}
+              {person.role || 'Akraba'}
             </p>
           </div>
         </div>

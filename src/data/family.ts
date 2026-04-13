@@ -2,6 +2,7 @@ import type { FamilyTreeData } from '../types';
 
 export const familyData: FamilyTreeData = {
   persons: [
+    // ===== Generation 5 (En eski - ~1857-1884) =====
     {
       id: 'pehlul-karsli',
       firstName: 'Pehlül',
@@ -9,18 +10,20 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1857',
       deathDate: '01.07.1933',
-      role: 'Annetarafı',
-      description: 'Annesininannesininbabasınınbabası. Hasankaledoğumlu. Babası:HafisHalil Annesi:Hafize.',
+      role: 'Anne tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Annesinin annesinin babasının babası\nDoğum Yeri: Hasankale\nBabası: Hafis Halil\nAnnesi: Hafize',
     },
     {
       id: 'fehme-karsli',
       firstName: 'Fehme',
       lastName: 'Karslı',
       gender: 'female',
-      birthDate: '01.071857',
-      deathDate: '01.071932',
-      role: 'Annetarafı',
-      description: 'Annesininannesininbabasınınannesi. Hasankaledoğumlu. Babası:Şerif Annesi:Peruze.',
+      birthDate: '01.07.1857',
+      deathDate: '01.07.1932',
+      role: 'Anne tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Annesinin annesinin babasının annesi\nDoğum Yeri: Hasankale\nBabası: Şerif\nAnnesi: Peruze',
     },
     {
       id: 'aziz-olgar',
@@ -29,8 +32,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1865',
       deathDate: '12.07.1940',
-      role: 'Annetarafı',
-      description: 'Annesininannesininannesininbabası. Hasankaledoğumlu. Babası:Yunus Annesi:İzzet.',
+      role: 'Anne tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Annesinin annesinin annesinin babası\nDoğum Yeri: Hasankale\nBabası: Yunus\nAnnesi: İzzet',
     },
     {
       id: 'gulzade-olgar',
@@ -39,8 +43,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1884',
       deathDate: '01.10.1970',
-      role: 'Annetarafı',
-      description: 'Annesininannesininannesininannesi. Hasankaledoğumlu. Babası:Hurşit Annesi:Gülşan.',
+      role: 'Anne tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Annesinin annesinin annesinin annesi\nDoğum Yeri: Hasankale\nBabası: Hurşit\nAnnesi: Gülşan',
     },
     {
       id: 'asker-sakar',
@@ -49,8 +54,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1869',
       deathDate: '28.10.1934',
-      role: 'Babatarafı',
-      description: 'Babasınınbabasınınannesininbabası. Hasankale/Ağaçminaredoğumlu. Babası:Sefer Annesi:Mahbup.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının babasının annesinin babası\nDoğum Yeri: Hasankale / Ağaçminare\nBabası: Sefer\nAnnesi: Mahbup',
     },
     {
       id: 'hani-sakar',
@@ -59,8 +65,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1867',
       deathDate: '15.12.1943',
-      role: 'Babatarafı',
-      description: 'Babasınınbabasınınannesininannesi. Hasankale/Ağaçminaredoğumlu. Babası:Mahmut Annesi:Fatma.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının babasının annesinin annesi\nDoğum Yeri: Hasankale / Ağaçminare\nBabası: Mahmut\nAnnesi: Fatma',
     },
     {
       id: 'abdussemet-erturan',
@@ -69,8 +76,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1877',
       deathDate: '01.08.1972',
-      role: 'Babatarafı',
-      description: 'Babasınınannesininbabasınınbabası. Pasinlerdoğumlu. Babası:Memet Annesi:Zekiye.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının annesinin babasının babası\nDoğum Yeri: Pasinler\nBabası: Memet\nAnnesi: Zekiye',
     },
     {
       id: 'bedriye-erturan',
@@ -79,8 +87,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1882',
       deathDate: '10.03.1966',
-      role: 'Babatarafı',
-      description: 'Babasınınannesininbabasınınannesi. Pasinlerdoğumlu. Babası:Şeyih Annesi:Kıymet.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının annesinin babasının annesi\nDoğum Yeri: Pasinler\nBabası: Şeyih\nAnnesi: Kıymet',
     },
     {
       id: 'gulzade-iccan',
@@ -89,8 +98,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1878',
       deathDate: '15.07.1975',
-      role: 'Annetarafı',
-      description: 'Annesininbabasınınbabasınınannesi. Pasinler/Kethudadoğumlu. Babası:Ali Annesi:Güller.',
+      role: 'Anne tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Annesinin babasının babasının annesi\nDoğum Yeri: Pasinler / Kethuda\nBabası: Ali\nAnnesi: Güller',
     },
     {
       id: 'memet-korucuk',
@@ -99,8 +109,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1879',
       deathDate: '16.01.1955',
-      role: 'Babatarafı',
-      description: 'Babasınınbabasınınbabasınınbabası. Hasankale/Camiikebirdoğumlu. Babası:Hasan Annesi:Ayişe.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının babasının babasının babası\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Hasan\nAnnesi: Ayişe',
     },
     {
       id: 'izzet-korucuk',
@@ -109,9 +120,12 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1880',
       deathDate: '10.08.1955',
-      role: 'Babatarafı',
-      description: 'Babasınınbabasınınbabasınınannesi. Hasankale/Camiikebirdoğumlu. Babası:Musa Annesi:Peruze.',
+      role: 'Baba tarafı',
+      tag: 'Derece 5',
+      description: 'Yakınlık: Babasının babasının babasının annesi\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Musa\nAnnesi: Peruze',
     },
+
+    // ===== Generation 4 (~1910-1924) =====
     {
       id: 'mahmut-karsli',
       firstName: 'Mahmut',
@@ -119,8 +133,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1918',
       deathDate: '20.05.1991',
-      role: 'Annetarafı',
-      description: 'Annesininannesininbabası. Hasankale/ErzurumKapıdoğumlu. Babası:Pehlül Annesi:Fehme.',
+      role: 'Anne tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Annesinin annesinin babası\nDoğum Yeri: Hasankale / Erzurum Kapı\nBabası: Pehlül\nAnnesi: Fehme',
     },
     {
       id: 'memnune-karsli',
@@ -129,8 +144,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1916',
       deathDate: '25.04.2017',
-      role: 'Annetarafı',
-      description: 'Annesininannesininannesi. Hasankale/ErzurumKapıdoğumlu. Babası:Aziz Annesi:Gülzade.101yaşındavefatetti.',
+      role: 'Anne tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Annesinin annesinin annesi\nDoğum Yeri: Hasankale / Erzurum Kapı\nBabası: Aziz\nAnnesi: Gülzade\nNot: 101 yaşında vefat etti',
     },
     {
       id: 'abdullah-iccan',
@@ -139,8 +155,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1918',
       deathDate: '25.10.1982',
-      role: 'Annetarafı',
-      description: 'Annesininbabasınınbabası. Pasinler/Kethudadoğumlu. Babası:Hamdi Annesi:Gülzade.',
+      role: 'Anne tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Annesinin babasının babası\nDoğum Yeri: Pasinler / Kethuda\nBabası: Hamdi\nAnnesi: Gülzade',
     },
     {
       id: 'makbule-iccan',
@@ -149,8 +166,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1916',
       deathDate: '22.01.1994',
-      role: 'Annetarafı',
-      description: 'Annesininbabasınınannesi. Pasinler/Kethudadoğumlu. Babası:İbrahim Annesi:Binnaz.',
+      role: 'Anne tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Annesinin babasının annesi\nDoğum Yeri: Pasinler / Kethuda\nBabası: İbrahim\nAnnesi: Binnaz',
     },
     {
       id: 'mustafa-korucuk',
@@ -159,8 +177,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1911',
       deathDate: '02.12.1976',
-      role: 'Babatarafı',
-      tag: 'Patriarch', description: 'Babasınınbabasınınbabası. Hasankale/Camiikebirdoğumlu. Babası:Memet Annesi:İzzet.',
+      role: 'Baba tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Babasının babasının babası\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Memet\nAnnesi: İzzet',
     },
     {
       id: 'fatma-korucuk',
@@ -169,8 +188,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1910',
       deathDate: '18.11.1980',
-      role: 'Babatarafı',
-      description: 'Babasınınbabasınınannesi. Hasankale/Camiikebirdoğumlu. Babası:Asker Annesi:Hati.',
+      role: 'Baba tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Babasının babasının annesi\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Asker\nAnnesi: Hati',
     },
     {
       id: 'memet-erturan',
@@ -179,8 +199,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '01.07.1921',
       deathDate: '24.03.1949',
-      role: 'Babatarafı',
-      description: 'Babasınınannesininbabası. Pasinler/Akçataşdoğumlu. Babası:Abdussemet Annesi:Bedriye.28yaşındavefatetti.',
+      role: 'Baba tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Babasının annesinin babası\nDoğum Yeri: Pasinler / Akçataş\nBabası: Abdussemet\nAnnesi: Bedriye\nNot: 28 yaşında vefat etti',
     },
     {
       id: 'siddika-peker',
@@ -189,9 +210,12 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '01.07.1924',
       deathDate: '29.12.1953',
-      role: 'Babatarafı',
-      description: 'Babasınınannesininannesi. Erzurum/Hınıs/Halilçavuşdoğumlu. Babası:Necip Annesi:Hadire.29yaşındavefatetti.',
+      role: 'Baba tarafı',
+      tag: 'Derece 4',
+      description: 'Yakınlık: Babasının annesinin annesi\nDoğum Yeri: Erzurum / Hınıs / Halilçavuş\nBabası: Necip\nAnnesi: Hadire\nNot: 29 yaşında vefat etti',
     },
+
+    // ===== Generation 3 - Büyükanne/Büyükbaba =====
     {
       id: 'mukim-korucuk',
       firstName: 'Mukim',
@@ -199,8 +223,9 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '10.09.1938',
       deathDate: '23.06.2021',
-      role: 'Babababası',
-      tag: 'Patriarch', description: 'Babatarafıbüyükbaba. Hasankale/Camiikebirdoğumlu. Babası:Mustafa Annesi:Fatma.',
+      role: 'Baba babası',
+      tag: 'Derece 3',
+      description: 'Yakınlık: Babasının babası\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Mustafa\nAnnesi: Fatma',
     },
     {
       id: 'gulsen-korucuk',
@@ -209,8 +234,9 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '25.08.1944',
       deathDate: '10.10.2017',
-      role: 'Babaannesi',
-      tag: 'Matriarch', description: 'Babatarafıbüyükanne. Hasankale/Camiikebirdoğumlu. Babası:MemeErturan),  Annesi:Sıddıka.',
+      role: 'Baba annesi',
+      tag: 'Derece 3',
+      description: 'Yakınlık: Babasının annesi\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Memet (Erturan)\nAnnesi: Sıddıka',
     },
     {
       id: 'burhanettin-iscan',
@@ -218,9 +244,9 @@ export const familyData: FamilyTreeData = {
       lastName: 'İşcan',
       gender: 'male',
       birthDate: '01.01.1947',
-      role: 'Annebabası', tag:
-        'Patriarch', description:
-        'Annetarafıbüyükbaba. Pasinler/Kethudadoğumlu. Babası:Abdullah Annesi:Makbule.Hayatta.',
+      role: 'Anne babası',
+      tag: 'Derece 3',
+      description: 'Yakınlık: Annesinin babası\nDoğum Yeri: Pasinler / Kethuda\nBabası: Abdullah\nAnnesi: Makbule\nNot: Hayatta',
     },
     {
       id: 'suriyya-iscan',
@@ -228,18 +254,21 @@ export const familyData: FamilyTreeData = {
       lastName: 'İşcan',
       gender: 'female',
       birthDate: '30.11.1945',
-      role: 'Anneannesi', tag:
-        'Matriarch', description:
-        'Annetarafıbüyükanne. Hasankale/Kethudadoğumlu. Babası:Mahmut Annesi:Memnune.Hayatta.',
+      role: 'Anne annesi',
+      tag: 'Derece 3',
+      description: 'Yakınlık: Annesinin annesi\nDoğum Yeri: Hasankale / Kethuda\nBabası: Mahmut\nAnnesi: Memnune\nNot: Hayatta',
     },
+
+    // ===== Generation 2 - Anne/Baba =====
     {
       id: 'nur-mehmet-fevzi',
-      firstName: 'NurMehmetFevzi',
+      firstName: 'Nur Mehmet Fevzi',
       lastName: 'Korucuk',
       gender: 'male',
-      birthDate: '21.07.196',
+      birthDate: '21.07.1966',
       role: 'Baba',
-      description: 'Hasankale/Camiikebirdoğumlu. Babası:Mukim Annesi:Gülsen.',
+      tag: 'Derece 2',
+      description: 'Yakınlık: Babası\nDoğum Yeri: Hasankale / Camiikebir\nBabası: Mukim\nAnnesi: Gülsen',
     },
     {
       id: 'serap-korucuk',
@@ -248,8 +277,11 @@ export const familyData: FamilyTreeData = {
       gender: 'female',
       birthDate: '14.05.1976',
       role: 'Anne',
-      description: 'Pasinler/Camiikebirdoğumlu . Babası:Burhanettin Annesi:Süriyya.Kızlıksoyadı:İşcan.',
+      tag: 'Derece 2',
+      description: 'Yakınlık: Annesi\nDoğum Yeri: Pasinler / Camiikebir\nBabası: Burhanettin\nAnnesi: Süriyya\nKızlık soyadı: İşcan',
     },
+
+    // ===== Generation 1 - Kendisi + Kardeş + Eşler =====
     {
       id: 'ebubekir-korucuk',
       firstName: 'Ebubekir',
@@ -257,260 +289,120 @@ export const familyData: FamilyTreeData = {
       gender: 'male',
       birthDate: '12.08.1995',
       role: 'Ağabey',
-      description: 'AhmetSaid\'inağabeyi.',
+      tag: 'Derece 1',
+      description: 'Yakınlık: Ağabey\nDoğum Yeri: Erzurum\nBabası: Nur Mehmet Fevzi\nAnnesi: Serap',
     },
     {
       id: 'gizem-nur-korucuk',
-      firstName: 'GizemNur',
-      lastName: 'Korucu',
+      firstName: 'Gizem Nur',
+      lastName: 'Korucuk',
       gender: 'female',
       birthDate: '1994',
       role: 'Yenge',
-      description: 'Ebubekir\'ineşi.',
+      tag: 'Derece 1',
+      description: 'Yakınlık: Yenge\nEşi: Ebubekir Korucuk',
     },
     {
       id: 'ahmet-said',
-      firstName: 'AhmetSaid',
+      firstName: 'Ahmet Said',
       lastName: 'Korucuk',
       gender: 'male',
       birthDate: '09.07.1999',
       role: 'Kendisi',
-      tag: 'CurrentFocus',
-      description: 'Pasinler/Camiikebirdoğumlu. Babası:NurMehmetFevzi Annesi:Serap.',
+      tag: 'Derece 1',
+      description: 'Yakınlık: Kendisi\nDoğum Yeri: Pasinler / Camiikebir\nBabası: Nur Mehmet Fevzi\nAnnesi: Serap',
     },
     {
       id: 'elif-nur-korucuk',
-      firstName: 'ElifNur',
+      firstName: 'Elif Nur',
       lastName: 'Korucuk',
       gender: 'female',
-      birthDate: '20.06.199',
+      birthDate: '20.06.1999',
       role: 'Eş',
-      description: 'AhmetSaid\'ineşi.',
+      tag: 'Derece 1',
+      description: 'Yakınlık: Eş\nEşi: Ahmet Said Korucuk',
     },
     {
       id: 'ebubekir-child',
-      firstName: '?',
+      firstName: '👑',
       lastName: 'Korucuk',
       gender: 'male',
-      role: 'Geleceknesil',
+      role: 'Yeğen',
       isPlaceholder: true,
     },
   ],
   relationships: [
-    {
-      from: 'pehlul-karsli',
-      to: 'fehme-karsli',
-      type: 'spouse'
-    },
-    {
-      from: 'pehlul-karsli',
-      to: 'mahmut-karsli',
-      type: 'parent'
-    },
-    {
-      from: 'fehme-karsli',
-      to: 'mahmut-karsli',
-      type: 'parent'
-    },
-    {
-      from: 'aziz-olgar',
-      to: 'gulzade-olgar',
-      type: 'spouse'
-    },
-    {
-      from: 'aziz-olgar',
-      to: 'memnune-karsli',
-      type: 'parent'
-    },
-    {
-      from: 'gulzade-olgar',
-      to: 'memnune-karsli',
-      type: 'parent'
-    },
-    {
-      from: 'gulzade-iccan',
-      to: 'abdullah-iccan',
-      type: 'parent'
-    },
-    {
-      from: 'memet-korucuk',
-      to: 'izzet-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'memet-korucuk',
-      to: 'mustafa-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'izzet-korucuk',
-      to: 'mustafa-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'asker-sakar',
-      to: 'hani-sakar',
-      type: 'spouse'
-    },
-    {
-      from: 'asker-sakar',
-      to: 'fatma-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'hani-sakar',
-      to: 'fatma-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'abdussemet-erturan',
-      to: 'bedriye-erturan',
-      type: 'spouse'
-    },
-    {
-      from: 'abdussemet-erturan',
-      to: 'memet-erturan',
-      type: 'parent'
-    },
-    {
-      from: 'bedriye-erturan',
-      to: 'memet-erturan',
-      type: 'parent'
-    },
-    {
-      from: 'mahmut-karsli',
-      to: 'memnune-karsli',
-      type: 'spouse'
-    },
-    {
-      from: 'mahmut-karsli',
-      to: 'suriyya-iscan',
-      type: 'parent'
-    },
-    {
-      from: 'memnune-karsli',
-      to: 'suriyya-iscan',
-      type: 'parent'
-    },
-    {
-      from: 'abdullah-iccan',
-      to: 'makbule-iccan',
-      type: 'spouse'
-    },
-    {
-      from: 'abdullah-iccan',
-      to: 'burhanettin-iscan',
-      type: 'parent'
-    },
-    {
-      from: 'makbule-iccan',
-      to: 'burhanettin-iscan',
-      type: 'parent'
-    },
-    {
-      from: 'mustafa-korucuk',
-      to: 'fatma-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'mustafa-korucuk',
-      to: 'mukim-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'fatma-korucuk',
-      to: 'mukim-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'memet-erturan',
-      to: 'siddika-peker',
-      type: 'spouse'
-    },
-    {
-      from: 'memet-erturan',
-      to: 'gulsen-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'siddika-peker',
-      to: 'gulsen-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'mukim-korucuk',
-      to: 'gulsen-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'mukim-korucuk',
-      to: 'nur-mehmet-fevzi',
-      type: 'parent'
-    },
-    {
-      from: 'gulsen-korucuk',
-      to: 'nur-mehmet-fevzi',
-      type: 'parent'
-    },
-    {
-      from: 'burhanettin-iscan',
-      to: 'suriyya-iscan',
-      type: 'spouse'
-    },
-    {
-      from: 'burhanettin-iscan',
-      to: 'serap-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'suriyya-iscan',
-      to: 'serap-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'nur-mehmet-fevzi',
-      to: 'serap-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'nur-mehmet-fevzi',
-      to: 'ebubekir-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'serap-korucuk',
-      to: 'ebubekir-korucuk',
-      type: 'parent'
-    },
-    {
-      from: 'nur-mehmet-fevzi',
-      to: 'ahmet-said',
-      type: 'parent'
-    },
-    {
-      from: 'serap-korucuk',
-      to: 'ahmet-said',
-      type: 'parent'
-    },
-    {
-      from: 'ahmet-said',
-      to: 'elif-nur-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'ebubekir-korucuk',
-      to: 'gizem-nur-korucuk',
-      type: 'spouse'
-    },
-    {
-      from: 'ebubekir-korucuk',
-      to: 'ebubekir-child',
-      type: 'parent'
-    },
-    {
-      from: 'gizem-nur-korucuk',
-      to: 'ebubekir-child',
-      type: 'parent'
-    },
+    // Pehlül + Fehme → Mahmut
+    { from: 'pehlul-karsli', to: 'fehme-karsli', type: 'spouse' },
+    { from: 'pehlul-karsli', to: 'mahmut-karsli', type: 'parent' },
+    { from: 'fehme-karsli', to: 'mahmut-karsli', type: 'parent' },
+
+    // Aziz + Gülzade Olğar → Memnune
+    { from: 'aziz-olgar', to: 'gulzade-olgar', type: 'spouse' },
+    { from: 'aziz-olgar', to: 'memnune-karsli', type: 'parent' },
+    { from: 'gulzade-olgar', to: 'memnune-karsli', type: 'parent' },
+
+    // Gülzade İçcan → Abdullah
+    { from: 'gulzade-iccan', to: 'abdullah-iccan', type: 'parent' },
+
+    // Memet Korucuk + İzzet → Mustafa
+    { from: 'memet-korucuk', to: 'izzet-korucuk', type: 'spouse' },
+    { from: 'memet-korucuk', to: 'mustafa-korucuk', type: 'parent' },
+    { from: 'izzet-korucuk', to: 'mustafa-korucuk', type: 'parent' },
+
+    // Asker + Hani → Fatma
+    { from: 'asker-sakar', to: 'hani-sakar', type: 'spouse' },
+    { from: 'asker-sakar', to: 'fatma-korucuk', type: 'parent' },
+    { from: 'hani-sakar', to: 'fatma-korucuk', type: 'parent' },
+
+    // Abdussemet + Bedriye → Memet Erturan
+    { from: 'abdussemet-erturan', to: 'bedriye-erturan', type: 'spouse' },
+    { from: 'abdussemet-erturan', to: 'memet-erturan', type: 'parent' },
+    { from: 'bedriye-erturan', to: 'memet-erturan', type: 'parent' },
+
+    // Mahmut + Memnune → Süriyya
+    { from: 'mahmut-karsli', to: 'memnune-karsli', type: 'spouse' },
+    { from: 'mahmut-karsli', to: 'suriyya-iscan', type: 'parent' },
+    { from: 'memnune-karsli', to: 'suriyya-iscan', type: 'parent' },
+
+    // Abdullah + Makbule → Burhanettin
+    { from: 'abdullah-iccan', to: 'makbule-iccan', type: 'spouse' },
+    { from: 'abdullah-iccan', to: 'burhanettin-iscan', type: 'parent' },
+    { from: 'makbule-iccan', to: 'burhanettin-iscan', type: 'parent' },
+
+    // Mustafa + Fatma → Mukim
+    { from: 'mustafa-korucuk', to: 'fatma-korucuk', type: 'spouse' },
+    { from: 'mustafa-korucuk', to: 'mukim-korucuk', type: 'parent' },
+    { from: 'fatma-korucuk', to: 'mukim-korucuk', type: 'parent' },
+
+    // Memet Erturan + Sıddıka → Gülsen
+    { from: 'memet-erturan', to: 'siddika-peker', type: 'spouse' },
+    { from: 'memet-erturan', to: 'gulsen-korucuk', type: 'parent' },
+    { from: 'siddika-peker', to: 'gulsen-korucuk', type: 'parent' },
+
+    // Mukim + Gülsen → Nur Mehmet Fevzi
+    { from: 'mukim-korucuk', to: 'gulsen-korucuk', type: 'spouse' },
+    { from: 'mukim-korucuk', to: 'nur-mehmet-fevzi', type: 'parent' },
+    { from: 'gulsen-korucuk', to: 'nur-mehmet-fevzi', type: 'parent' },
+
+    // Burhanettin + Süriyya → Serap
+    { from: 'burhanettin-iscan', to: 'suriyya-iscan', type: 'spouse' },
+    { from: 'burhanettin-iscan', to: 'serap-korucuk', type: 'parent' },
+    { from: 'suriyya-iscan', to: 'serap-korucuk', type: 'parent' },
+
+    // Nur Mehmet Fevzi + Serap → Ebubekir + Ahmet Said
+    { from: 'nur-mehmet-fevzi', to: 'serap-korucuk', type: 'spouse' },
+    { from: 'nur-mehmet-fevzi', to: 'ebubekir-korucuk', type: 'parent' },
+    { from: 'serap-korucuk', to: 'ebubekir-korucuk', type: 'parent' },
+    { from: 'nur-mehmet-fevzi', to: 'ahmet-said', type: 'parent' },
+    { from: 'serap-korucuk', to: 'ahmet-said', type: 'parent' },
+
+    // Eşler
+    { from: 'ahmet-said', to: 'elif-nur-korucuk', type: 'spouse' },
+    { from: 'ebubekir-korucuk', to: 'gizem-nur-korucuk', type: 'spouse' },
+
+    // Ebubekir + Gizem → placeholder child
+    { from: 'ebubekir-korucuk', to: 'ebubekir-child', type: 'parent' },
+    { from: 'gizem-nur-korucuk', to: 'ebubekir-child', type: 'parent' },
   ],
-}
+};
