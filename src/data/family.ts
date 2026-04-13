@@ -250,7 +250,7 @@ export const familyData: FamilyTreeData = {
     },
     {
       id: 'suriyya-iscan',
-      firstName: 'Süriyya',
+      firstName: 'Süriyya (Tahire)',
       lastName: 'İşcan',
       gender: 'female',
       birthDate: '30.11.1945',

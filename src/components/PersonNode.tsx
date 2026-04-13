@@ -15,6 +15,7 @@ function PersonNode({ data }: NodeProps & { data: PersonNodeData }) {
       <>
         <Handle type="target" position={Position.Top} className="!bg-[var(--color-primary)] !w-2 !h-2 !opacity-0" />
         <div
+          onClick={() => onSelect(person)}
           className="cursor-pointer rounded-2xl w-[220px]
             border-2 border-dashed border-[#64b5f6]
             bg-[#e3f2fd] dark:bg-[#0d2137]

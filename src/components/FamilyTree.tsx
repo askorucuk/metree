@@ -9,6 +9,7 @@ import {
   useEdgesState,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
+import Confetti from 'react-confetti';
 
 import PersonNode from './PersonNode';
 import PersonModal from './PersonModal';
@@ -22,9 +23,15 @@ const nodeTypes = { person: PersonNode };
 
 export default function FamilyTree() {
   const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleSelect = useCallback((person: Person) => {
     setSelectedPerson(person);
+    if (person.role === 'Yeğen') {
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 10000);
+      setTimeout(() => setSelectedPerson(null), 10000);
+    }
   }, []);
 
   const { nodes: initialNodes, edges: initialEdges } = useMemo(
@@ -74,6 +81,7 @@ export default function FamilyTree() {
         <img src={korucukLogo} alt="Korucuk" className="h-12 object-contain rounded-[4px]" />
       </div>
 
+      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} recycle={false} numberOfPieces={2000} gravity={0.4} initialVelocityY={50} tweenDuration={12000} />}
       <ThemeToggle />
       <PersonModal person={selectedPerson} onClose={() => setSelectedPerson(null)} />
     </div>

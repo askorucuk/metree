@@ -66,9 +66,13 @@ export default function PersonModal({ person, onClose }: PersonModalProps) {
           )}
 
           {person.description && (
-            <p className="mt-4 text-sm text-[var(--color-on-surface-secondary)] leading-relaxed bg-[var(--color-surface-variant)] rounded-xl p-4">
-              {person.description}
-            </p>
+            <div className="mt-4 flex flex-col items-start gap-2 w-full bg-[var(--color-surface-variant)] rounded-xl p-4">
+              {person.description.split('\n').filter(Boolean).map((line, i) => (
+                <p key={i} className="text-sm text-[var(--color-on-surface-secondary)] leading-relaxed">
+                  {line}
+                </p>
+              ))}
+            </div>
           )}
         </div>
       </div>
