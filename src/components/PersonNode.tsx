@@ -10,6 +10,30 @@ type PersonNodeData = {
 function PersonNode({ data }: NodeProps & { data: PersonNodeData }) {
   const { person, onSelect } = data;
 
+  if (person.isPlaceholder) {
+    return (
+      <>
+        <Handle type="target" position={Position.Top} className="!bg-[var(--color-primary)] !w-2 !h-2 !opacity-0" />
+        <div
+          className="cursor-pointer rounded-2xl w-[220px]
+            border-2 border-dashed border-[#64b5f6]
+            bg-[#e3f2fd] dark:bg-[#0d2137]
+            shadow-sm hover:shadow-md transition-all duration-200
+            hover:scale-[1.03]"
+          style={{ padding: '20px' }}
+        >
+          <div className="flex flex-col items-center justify-center gap-2 py-4">
+            <span className="text-4xl text-[#64b5f6]">?</span>
+            <p className="text-sm font-medium text-[#42a5f5]">
+              {person.role || 'Gelecek nesil'}
+            </p>
+          </div>
+        </div>
+        <Handle type="source" position={Position.Bottom} className="!bg-[var(--color-primary)] !w-2 !h-2 !opacity-0" />
+      </>
+    );
+  }
+
   return (
     <>
       <Handle type="target" position={Position.Top} className="!bg-[var(--color-primary)] !w-2 !h-2 !opacity-0" />
