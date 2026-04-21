@@ -14,7 +14,7 @@ import Confetti from 'react-confetti';
 import PersonNode from './PersonNode';
 import PersonModal from './PersonModal';
 import ThemeToggle from './ThemeToggle';
-import { treeProfiles } from '../data/index';
+import { treeProfiles, type TreeProfile } from '../data/index';
 import { generateLayout } from '../utils/layoutTree';
 import type { Person } from '../types';
 import korucukLogo from '../assets/korucuk-logo.png';
@@ -26,7 +26,7 @@ export default function FamilyTree() {
   const [showConfetti, setShowConfetti] = useState(false);
   const [activeProfileId, setActiveProfileId] = useState(treeProfiles[0].id);
 
-  const activeProfile = treeProfiles.find(p => p.id === activeProfileId) ?? treeProfiles[0];
+  const activeProfile = treeProfiles.find((p: TreeProfile) => p.id === activeProfileId) ?? treeProfiles[0];
 
   const handleSelect = useCallback((person: Person) => {
     setSelectedPerson(person);
@@ -92,7 +92,7 @@ export default function FamilyTree() {
 
         {/* Profile buttons */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2">
-          {treeProfiles.map(profile => {
+          {treeProfiles.map((profile: TreeProfile) => {
             const isActive = profile.id === activeProfileId;
             const isEmpty = profile.data.persons.length === 0;
             return (
