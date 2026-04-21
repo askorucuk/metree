@@ -14,7 +14,7 @@ import Confetti from 'react-confetti';
 import PersonNode from './PersonNode';
 import PersonModal from './PersonModal';
 import ThemeToggle from './ThemeToggle';
-import { treeProfiles, type TreeProfile } from '../data/index';
+import { treeProfiles, type TreeProfile } from '../data/profiles';
 import { generateLayout } from '../utils/layoutTree';
 import type { Person } from '../types';
 import korucukLogo from '../assets/korucuk-logo.png';
