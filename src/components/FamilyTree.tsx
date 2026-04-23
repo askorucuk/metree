@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import {
   ReactFlow,
   Controls,
@@ -30,7 +30,7 @@ export default function FamilyTree() {
 
   const handleSelect = useCallback((person: Person) => {
     setSelectedPerson(person);
-    if (person.role === 'Yeğen') {
+    if (person.isPlaceholder) {
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 10000);
       setTimeout(() => setSelectedPerson(null), 10000);
@@ -42,8 +42,14 @@ export default function FamilyTree() {
     [activeProfile.data, handleSelect]
   );
 
-  const [nodes, , onNodesChange] = useNodesState(initialNodes);
-  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+
+  // Sync nodes/edges when active profile changes
+  useEffect(() => {
+    setNodes(initialNodes);
+    setEdges(initialEdges);
+  }, [initialNodes, initialEdges, setNodes, setEdges]);
 
   return (
     <div className="w-full h-full relative">
